@@ -4,5 +4,8 @@ flash with mega puya
 gpio0 low is for program mode 
 blue led is gpio1 ie txd 
 red led is connected to power
-https://circuits4you.com/2016/12/14/esp8266-pin-diagram/
+pins:  https://circuits4you.com/2016/12/14/esp8266-pin-diagram/
+onboard: ledhttps://www.esp8266.com/viewtopic.php?f=6&t=1033
+using all pins: 
+
 
