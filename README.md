@@ -9,3 +9,7 @@ to program need to hold pin 0 to gnd then power on
 Using all the pins
 https://arduinodiy.wordpress.com/2016/10/11/using-the-4-pins-of-the-esp8266-01/
 
+https://circuits4you.com/2016/12/14/esp8266-pin-diagram/
+
+
+
