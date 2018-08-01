@@ -1,7 +1,29 @@
 jul2018
 3 x esp01 1k black pcb, puya chips
 flash with mega puya
-gpio0 low is for program mode 
+
+i2c
+GPIO0 and GPIO2 may need to have pull-up resistors connected to ensure the module starts up correctly.
+Choice is to use GPIO0 (data) and GPIO2(clk) as the I2C bus.
+https://diyprojects.io/connect-i2c-ssd1306-oled-display-esp-01-esp8266/#.W2EAK8KxVLM
+
+
+
+Using gpio 0:
+You can use GPIO0 as an output. The ESP will read the state of GPIO0 once at boot (And never again thereafter) to determine what boot mode 
+to enter. During this time it is an input, so, whatever you hook GPIO0 up to must not hold this pin low (Unless you want to enter bootloader 
+mode, of course), at least until the chip boots. As long as you satisfy this condition, you can use the pin for anything else.
+
+
+pins available are:
+gpio0 also used for prog mode: pull low is for program mode, then rst
+gpio1 is txd and also connected to onboard blue led
+gpio2 is free
+gpio3 is rxd
+
+
+
+
 blue led is gpio1 ie txd 
 red led is connected to power
 pins:  https://circuits4you.com/2016/12/14/esp8266-pin-diagram/
